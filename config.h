@@ -65,12 +65,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    { cpu_freq,    "^c#FFFFFF^^b#000000^[^c#000000^^b#FFD557^CPU %6sHz ",    NULL },
+    { cpu_freq,    "^c#FFFFFF^^b#000000^[^c#000000^^b#FFD557^CPU %7sHz ",    NULL },
     { cpu_perc,    "%3s%% ",        NULL },
     { temp,        "%3sC^c#FFFFFF^^b#000000^] ",         "/sys/class/hwmon/hwmon3/temp1_input" },
     { ram_perc,    "[^c#000000^^b#57E7FF^RAM %s%%^c#FFFFFF^^b#000000^] ",     NULL },
 /*    { ipv4,        "NET %s ",       "enp0s31f6" }, */
-    { netspeed_rx, "[^c#000000^^b#5FFF56^NET %7s RX ",       "enp0s31f6" },
-    { netspeed_tx, "%7s TX^c#FFFFFF^^b#000000^] ",       "enp0s31f6" },
-    { datetime,    "[%s] ",           "%F %T" },
+    { netspeed_rx, "[^c#000000^^b#5FFF56^NET %8s RX ",       "enp0s31f6" },
+    { netspeed_tx, "%8s TX^c#FFFFFF^^b#000000^] ",       "enp0s31f6" },
+    { datetime,    "[%s] ",           "%a %F %T" },
 };
